@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>kagoyume.search</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Item</servlet-name>
+        <servlet-class>kagoyume.Item</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>kagoyume.add</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertResult</servlet-name>
+        <servlet-class>kagoyume.InsertResult</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Item</servlet-name>
+        <url-pattern>/Item</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertResult</servlet-name>
+        <url-pattern>/InsertResult</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>top.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
